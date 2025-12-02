@@ -1,0 +1,92 @@
+
+   /* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Puedes cambiar la fuente si quieres */
+    
+
+body {
+    background-color: #f4f4f9; /* Color de fondo muy claro */
+    color: #333; /* Texto oscuro */
+    line-height: 1.6;
+}
+
+/* El contenedor principal de nuestro CV */
+#contenedor-principal {
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Coloca los hijos en columna (uno debajo del otro) */
+    max-width: 800px;
+    margin: 40px auto; /* Centra el contenedor en la página y da margen vertical */
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para el CV */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px;
+}
+
+header {
+    background-color: #007bff; /* Un color primario (azul) */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0 0;
+    color: #666;
+}
+
+/* Estilos en css/styles.css (al final del archivo) */
+
+/* ------------------ ESTILOS TEMA OSCURO ------------------ */
+
+.dark-mode {
+    background-color: #1a1a2e; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+/* Aplicar el estilo al contenedor principal cuando esté en modo oscuro */
+.dark-mode #contenedor-principal {
+    background-color: #2c2c44;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode header {
+    background-color: #009688; /* Un color secundario oscuro */
+}
+
+.dark-mode section h2 {
+    color: #009688;
+    border-bottom: 2px solid #009688;
+}
+
+.dark-mode footer {
+    color: #b0b0b0;
+}
